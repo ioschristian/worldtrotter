@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FgK-9d-IqE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FgK-9d-IqE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,13 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgo-fN-bsU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgo-fN-bsU">
                                 <rect key="frame" x="59.5" y="145.5" width="295" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCe-iK-Y3W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCe-iK-Y3W">
                                 <rect key="frame" x="150" y="196.5" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -33,8 +33,8 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHe-Ar-8FW">
-                                <rect key="frame" x="148.5" y="247.5" width="117" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHe-Ar-8FW">
+                                <rect key="frame" x="149" y="247.5" width="116.5" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -54,15 +54,20 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="IHe-Ar-8FW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6D3-QD-IFW"/>
                             <constraint firstItem="jCe-iK-Y3W" firstAttribute="centerX" secondItem="vgo-fN-bsU" secondAttribute="centerX" id="DHq-NV-cGr"/>
                             <constraint firstItem="Tsu-ld-sec" firstAttribute="centerX" secondItem="vgo-fN-bsU" secondAttribute="centerX" id="Krw-tP-SMb"/>
                             <constraint firstItem="vgo-fN-bsU" firstAttribute="top" secondItem="MWE-2C-k3z" secondAttribute="bottom" constant="8" id="RLu-hy-5j9"/>
                             <constraint firstItem="jCe-iK-Y3W" firstAttribute="top" secondItem="vgo-fN-bsU" secondAttribute="bottom" constant="8" id="Rch-wb-79h"/>
+                            <constraint firstItem="MWE-2C-k3z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TFt-mN-Hs2"/>
+                            <constraint firstItem="vgo-fN-bsU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VxU-4H-Wzj"/>
+                            <constraint firstItem="MWE-2C-k3z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Yzi-fv-LeU"/>
                             <constraint firstItem="Tsu-ld-sec" firstAttribute="centerX" secondItem="vgo-fN-bsU" secondAttribute="centerX" id="cDK-30-cSY"/>
                             <constraint firstItem="jCe-iK-Y3W" firstAttribute="centerX" secondItem="vgo-fN-bsU" secondAttribute="centerX" id="hPi-pq-gNL"/>
                             <constraint firstItem="MWE-2C-k3z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="iYK-Bk-4BY"/>
                             <constraint firstItem="MWE-2C-k3z" firstAttribute="centerX" secondItem="vgo-fN-bsU" secondAttribute="centerX" id="jQI-vj-AYQ"/>
                             <constraint firstItem="Tsu-ld-sec" firstAttribute="top" secondItem="IHe-Ar-8FW" secondAttribute="bottom" constant="8" id="kFC-0k-Pze"/>
+                            <constraint firstItem="jCe-iK-Y3W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lGC-GY-Xxt"/>
                             <constraint firstItem="IHe-Ar-8FW" firstAttribute="centerX" secondItem="vgo-fN-bsU" secondAttribute="centerX" id="mFp-MM-xIH"/>
                             <constraint firstItem="MWE-2C-k3z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rN3-Kz-x0M"/>
                             <constraint firstItem="IHe-Ar-8FW" firstAttribute="top" secondItem="jCe-iK-Y3W" secondAttribute="bottom" constant="8" id="v1S-aT-eYM"/>
